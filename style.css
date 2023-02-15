@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #927dfc;
+}
+.wrapper {
+    width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 9px;
+}
+.wrapper .upload-box {
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px dashed #afafaf;
+}
+.wrapper.active .upload-box {
+    border: none;
+}
+.active .upload-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.upload-box p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.wrapper.active .upload-box p {
+    display: none;
+}
+.wrapper .content {
+    margin-top: 30px;
+}
+.content .row {
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .column {
+    width: calc(100% / 2 - 15px);
+}
+.row .column {
+    font-size: 1.1rem;
+}
+.sizes .column input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    margin-top: 7px;
+    padding: 0 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+.sizes .column input:focus {
+    padding: 0 14px;
+    border: 2px solid #927dfc;
+}
+.content .checkboxes {
+    margin-top: 10px;
+}
+.checkboxes .column {
+    display: flex;
+    align-items: center;
+}
+.checkboxes .column input {
+    width: 17px;
+    height: 17px;
+    accent-color: #927dfc;
+    margin-right: 5px;
+}
+.content .download {
+    width: 100%;
+    padding: 15px 0;
+    margin: 30px 0 10px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background: #927dfc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
